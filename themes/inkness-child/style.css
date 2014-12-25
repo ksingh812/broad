@@ -1,0 +1,335 @@
+/*
+Theme Name: Inkness Child
+Theme URI: http://test.arleen.me/inkness-child/
+Author: Rohit Tripathi
+Author URI: http://TicketHub.co
+Description: Inkness is a Responsive theme with 3 Column Grid based homepage layout. This theme is overloaded with plenty of featured, including an amazing reponsive slider, Multiple Page Layouts, Configurable Sidebar Locations, Footer Widgets & Easy to use admin Panel. This theme is upgradable to a pro version to enable more features. .pot file has been provided, so that you can translate theme into any language. Already Translated into Italian and French.
+Version: 1.0.3.1
+License: GNU General Public License
+License URI: license.txt
+Text Domain: inkness-child
+Template: inkness
+Domain Path: /languages/
+Tags: light, custom-background, two-columns, right-sidebar, responsive-layout, custom-menu, sticky-post, theme-options, threaded-comments, translation-ready, gray, left-sidebar, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments
+
+Inkness is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+Inkness WordPress Theme, Copyright 2013 Rohit Tripathi.
+Inkness WordPress Theme is distributed under the terms of the GNU GPL v3.
+*/
+
+
+/**  --- SEARCH BOX STYLE ---**/
+.form-wrapper input {
+	width: 75%;
+	height: 50px;
+	padding: 10px 15px;
+	float: left;
+	font: normal 18px 'Open Sans Condensed', 'Open Sans', sans-serif;;
+	/*border: 0;*/
+	background: #eee;
+	-moz-border-radius: 25px 0 0 25px;
+	-webkit-border-radius: 25px 0 0 25px;
+	border-radius: 25px 0 0 25px;
+	margin-bottom:20px;
+	margin-top:10px;
+}
+
+.form-wrapper button {
+overflow: visible;
+position: relative;
+/*border:0;*/
+padding: 0;
+cursor: pointer;
+height: 50px;
+width: 60px;
+font: bold 25px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+color: #7B7878;
+text-transform: uppercase;
+background: #eee;
+-moz-border-radius: 0 25px 25px 0;
+-webkit-border-radius: 0 25px 25px 0;
+border-radius: 0 25px 25px 0;
+text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .form-wrapper input {
+		width: 75%;
+		height: 40px;
+		padding: 10px 15px;
+		float: left;
+		font: normal 14px 'Open Sans Condensed', 'Open Sans', sans-serif;;
+		/*border: 0;*/
+		background: #eee;
+		-moz-border-radius: 25px 0 0 25px;
+		-webkit-border-radius: 25px 0 0 25px;
+		border-radius: 25px 0 0 25px;
+		margin-bottom:20px;
+		margin-top:10px;
+	}
+	.form-wrapper button {
+	overflow: visible;
+	position: relative;
+	/*border:0;*/
+	padding: 0;
+	cursor: pointer;
+	height: 40px;
+	width: 60px;
+	font: bold 20px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	color: #7B7878;
+	text-transform: uppercase;
+	background: #eee;
+	-moz-border-radius: 0 25px 25px 0;
+	-webkit-border-radius: 0 25px 25px 0;
+	border-radius: 0 25px 25px 0;
+	text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+	margin-top: 10px;
+	}
+	/*.main_logo {
+		max-width: 90%;
+		padding-top: 10px;
+	}*/
+}
+	@media (max-width: 640px){
+		.tkt-text{display:none;}
+		.tkt-btn{background-color: transparent!important; color:#000!important; font-size:18px;}
+	}
+	
+	button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	border: 1px solid #ccc;
+	border-color: #ccc #ccc #bbb #ccc;
+	border-radius: 3px;
+	background: #e6e6e6;
+	box-shadow: none!important;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+	-webkit-appearance: button;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	}
+	.form-wrapper input
+	{
+	border-bottom: 1px solid #323232;
+	border-left: 1px solid #323232;
+	border-top: 1px solid #323232;
+	border-right:0px;
+	}
+	.form-wrapper button
+	{
+	border-bottom: 1px solid #323232;
+	border-left: 0px;
+	border-top: 1px solid #323232;
+	border-right:1px solid #323232;
+	color:#d83c3c;
+	}
+/*** SEARCH STYLE END ****/
+
+body {
+    font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
+	font-size: 16px;
+    color: #000000;
+}
+
+#site-navigation a {
+display: block;
+color: #8b8b8b;
+text-decoration: none;
+padding: 16px 10px;
+font-weight: normal;
+font-weight: 400;
+font-size: 17px;
+}
+
+#site-navigation .current-menu-item a
+{
+	color:#d83c3c;
+	border-bottom: 2px solid #d83c3c;
+	padding-bottom:23px;
+}
+
+#site-navigation  a:hover {
+    border-bottom: 2px solid #d83c3c;
+    color: #d83c3c;
+	padding-bottom:25px;
+}
+
+#header-top {
+background: #fff!important;
+padding-top: 10px;
+}
+
+.navbar-fixed-top{
+	border-bottom: 2px solid #d83c3c;
+}
+.main_logo {
+max-width: 100%!important;
+padding-top: 15px!important;
+}
+
+#header-2, #site-navigation{
+	background: #2e2e2e;
+}
+#site-navigation li{
+	padding:0 10px;
+}
+
+#site-navigation a{
+	color:#fafafa;
+}
+.container {
+    max-width: 95%;
+}
+
+#content{background-color:#fff; padding-top:0px; border-top:1px solid #ededed;}
+#primary {border:0px; color:#000; margin-top:0px!important;}
+.content-area.col-md-12{margin-top:20px;}
+#primary article .entry-content{color:#2e2e2e; font-weight:300; font-size:18px;}
+.entry-header {font-size: 25px;font-weight: 600; padding-left: 15px;}
+#colophon { background: none repeat scroll 0 0 #2e2e2e;	color:#f2f2f2;}
+#colophon .widgettitle {font-weight:bold;}
+#secondary h1.widget-title, #footer-sidebar h1.widget-title {padding: 5px 5px 5px;}
+#ticket-table table > tbody> tr > td{border:0px;}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {background-color: #dddddd;}
+.tkt-btn {
+    background-color: #424242;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+}
+.tn_results{font-size:14px;}
+.table > tbody > tr > td {vertical-align:middle;}
+
+/* Article Style **/
+
+#broadway{border: 3px solid #000;}
+
+article img.post-img {
+display:block;
+width:100%;
+height:250px;
+}
+
+.post-meta{background: rgba(0,0,0,0.8);
+text-align: center;
+color: #fff;
+padding: 15px;
+min-height: 100px;
+margin-top: -100px;
+font-size: 14px;
+line-height: 1.5;}
+
+
+article a:hover{text-decoration:none;}
+
+article .tkt {background: none repeat scroll 0% 0% #D83C3C;
+font-size: 14px;
+padding: 3px 10px;
+border-radius: 3px;
+margin-top: 5px;}
+
+#filters a.button{
+	font-size: 12px;
+background: #DAD8D8;
+padding: 5px;
+border-radius: 3px;
+}
+#filters a.button:hover
+{
+	text-decoration: none;
+ 	background: #d83c3c;
+	cursor: pointer;
+	color: #fff;
+}
+#filters a.is-checked{
+	background: #d83c3c;
+	color: #fff;
+}
+#filters li:first-child a {padding-left:5px !important;}
+
+/* Post Meta **/
+
+.single .entry-meta, .page .entry-meta{
+	font-size:14px;
+	font-weight:300;
+}
+.single .entry-title, .page .entry-title{
+	font-size: 40px;
+	font-weight: 500;
+}
+.featured-image-single{
+	margin:0px;
+}
+.featured-image-single img{
+	box-shadow: none;
+	width: 100%;
+	height: auto;
+}
+.single footer.entry-meta, .page footer.entry-meta{
+	/*border-top: 1px dashed #010101;*/
+	padding-top: 15px;
+}
+
+/** META SLIDER HOME **/
+
+.metaslider{
+	width:100%;
+	height:auto;
+}
+.metaslider .caption-wrap{
+	height: 75px;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+/** TABS HOME **/
+.nav.nav-tabs{
+	margin-left: 0px !important;
+}
+.nav-tabs > li{
+	width:33%;
+	font-weight: 600;
+	text-align: center;
+	background: #000;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	border-radius: 0px;
+}
+
+/*** MOBILE CSS ***/
+@media (max-width: 600px) {
+	.metaslider .caption-wrap{
+		height: 25px;
+		font-size: 15px;
+		font-weight: 400;
+	}
+	.nav-tabs > li{
+		width:33%;
+		font-weight: 300;
+		font-size: 15px;
+	}
+	#filters li{
+		padding-bottom:10px;
+	}
+}
+
+/** TABLET CSS **/
+
+@media (min-width: 768px) and (max-width: 1050px) {
+	#site-navigation li{
+		padding:0px;
+		font-weight: 300;
+	}
+	#site-navigation li > a{
+		font-size:13px;
+	}
+	#filters li{
+		padding-bottom:10px;
+	}
+}

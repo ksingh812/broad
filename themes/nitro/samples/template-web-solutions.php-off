@@ -1,0 +1,57 @@
+<?php 
+/*
+Template Name: Web Solutions Template
+*/
+
+get_header(); ?>
+	<!-- SLIDER SHORTCODE -->
+	<?php $shortcode = get_post_meta( $post->ID, '_cd_shortcode', true );
+		if ( $shortcode != '' ) {
+			//echo $shortcode;
+			echo do_shortcode($shortcode);
+		}
+	?>
+
+  <div class="container" role="main">
+    <div class="row">
+		<div id="primary-content" class="col-xs-12"><!--- Start PRIMARY Content --->
+			<?php the_content(); ?>
+		</div>
+	</div><!-- CLOSE ROW -->
+ </div><!-- CLOSE MAIN --> 		
+<div id="footer-callout-web" style="margin-bottom:0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Are you ready to grow your business online? <a href="#" class="btn btn-primary btn-lg pull-right">TALK TO A SPECIALIST</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+	<div class="container">			
+		<!-- PORTFOLIO -->
+		<h3 class="page-section-title">Recent Case Studies</h3>
+		<div class="page-section-custom text-center" id="page-section-work">
+			<!-- BEGIN PORTFOLIO LOOP -->
+				<?php
+				$args = array( 'post_type' => 'portfolio', 'posts_per_page' => 3);
+				$loop = new WP_Query( $args );	
+				$count = 1;
+				if ( $loop->have_posts() ){
+				while ( $loop->have_posts() ) : $loop->the_post();
+				
+					get_template_part( 'part', 'web-portfolio-item' ); 
+				
+				endwhile; 
+				} //endif ?>
+			
+			<p>&nbsp;</p>
+			<a href="/case-studies" class="btn btn-primary btn-lg">Recent Work <span class="glyphicon glyphicon-chevron-right triggered"></span></a>		
+		</div>
+		<div class="clearfix"></div>	
+	</div>
+</div>
+
+<?php get_footer(); ?>
