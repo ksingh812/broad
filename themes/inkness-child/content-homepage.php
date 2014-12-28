@@ -13,7 +13,7 @@
 
 	<div class="entry-content">
 		<!-- Meta Slider -->
-		<?php echo do_shortcode('[metaslider id=441]'); ?>
+		<?php echo do_shortcode('[metaslider id=418]'); ?>
 
 		<div role="tabpanel">
 

@@ -54,9 +54,10 @@
 						<article id="broadway">
 							<a href="<?php echo get_permalink(); ?>">
 							<img src="<?php echo $url; ?>" class="post-img">
-							<div class="post-meta"><?php the_title(); ?> <br/>
-							<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
-							</div></a>
+							<!-- <div class="post-meta"><?php the_title(); ?> <br/>
+								<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
+							</div> -->
+							</a>
 						</article>
 					</div>
 					<!--<li style="list-style:none; line-height:2;"><a href="<?php the_permalink();?>"><?php the_title();?></a></li>-->

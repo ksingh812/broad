@@ -34,7 +34,6 @@ get_header(); ?>
 						<?php if ( has_post_thumbnail($post->ID) ) 
 							{
 								$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-								<img src="<?php echo $url; ?>" class="img-responsive wp-post-image" alt="<?php the_title()?>" />
 							<?php
 							}
 							else
@@ -46,9 +45,10 @@ get_header(); ?>
 						<article id="broadway">
 							<a href="<?php echo get_permalink(); ?>">
 							<img src="<?php echo $url; ?>" class="post-img">
-							<div class="post-meta"><?php the_title(); ?> <br/>
-							<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
-							</div></a>
+							<!-- <div class="post-meta"><?php the_title(); ?> <br/>
+								<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
+							</div> -->
+							</a>
 						</article>
 					</div>
 									
