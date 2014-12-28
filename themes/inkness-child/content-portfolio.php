@@ -11,30 +11,34 @@
 
 	<div class="entry-content row">
 		<div class="col-md-4">
-		<?php if (has_post_thumbnail() ) : ?>
-		
+			<?php if ( has_post_thumbnail($post->ID) ) 
+			{
+				$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 			<?php
-				the_post_thumbnail();
-			?>			
-			<?php 
-				else:
-					echo '<img src="/wp-content/uploads/2014/11/tickethub-thumbnail.png" width="100%" height="auto"/>';
-			endif; ?>
-		</div>
-		<div class="col-md-8">
+			}
+			else
+			{
+				$url = '/wp-content/uploads/2014/11/tickethub-thumbnail.png';
+			}
+			?>
+			<img src="<?php echo $url; ?>" width="250px" height="auto"/>
+			<!-- POST CONTENT -->
 			<?php the_content(); ?>
 		</div>
-	</div><!-- .entry-content -->
-	<div class="row" id="ticket-table">
-		<div class="table-responsive">				
-			<script type="text/javascript">// <![CDATA[
-			function TN_SetWidgetOptions() { TN_Widget.newWindow = false; TN_Widget.trackingParams = ''; TN_Widget.custLink = false; TN_Widget.tixUrl = 'http://tickets.tickethub.co/ResultsTicket.aspx'; }
-			// ]]></script>
-			<script type="text/javascript" src="http://site_01504_011.ticketsoftware.net/widget2_c.aspx?kwds=<?php the_title(); ?>&amp;style=0&amp;mxrslts=50">// <![CDATA[
-			<span id="mce_marker" data-mce-type="bookmark"></span><span id="__caret">_</span>
-			// ]]></script></div><a style="margin-top:20px;" class="qbutton  medium normal" title="<?php the_title(); ?> Tickets" target="_self" href="http://tickets.tickethub.co/ResultsGeneral.aspx?stype=0&kwds=<?php the_title(); ?>">MORE TICKETS</a>
+		<div class="col-md-8">
+			<div class="row" id="ticket-table">
+				<div class="table-responsive">				
+					<script type="text/javascript">// <![CDATA[
+					function TN_SetWidgetOptions() { TN_Widget.newWindow = false; TN_Widget.trackingParams = ''; TN_Widget.custLink = false; TN_Widget.tixUrl = 'http://tickets.tickethub.co/ResultsTicket.aspx'; }
+					// ]]></script>
+					<script type="text/javascript" src="http://site_01504_011.ticketsoftware.net/widget2_c.aspx?kwds=<?php the_title(); ?>&amp;style=0&amp;mxrslts=50">// <![CDATA[
+					<span id="mce_marker" data-mce-type="bookmark"></span><span id="__caret">_</span>
+					// ]]></script></div><a style="margin-top:20px;" class="qbutton  medium normal" title="<?php the_title(); ?> Tickets" target="_self" href="http://tickets.tickethub.co/ResultsGeneral.aspx?stype=0&kwds=<?php the_title(); ?>">MORE TICKETS</a>
+				</div>
+			</div>
 		</div>
-	</div>
+	</div><!-- .entry-content -->
+	
 	<footer class="entry-meta">
 		<?php
 			/* translators: used between list items, there is a space after the comma */

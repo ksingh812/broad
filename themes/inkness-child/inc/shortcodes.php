@@ -42,7 +42,6 @@
 			   		<?php if ( has_post_thumbnail($post->ID) ) 
 							{
 								$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-								<img src="<?php echo $url; ?>" class="img-responsive wp-post-image" alt="<?php the_title()?>" />
 							<?php
 							}
 							else
