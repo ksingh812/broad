@@ -34,12 +34,19 @@ get_header(); ?>
 							?>
 					<div id="element-item<?php echo $the_query->current_post+1?>" class="<?php echo trim($team_class); ?> element-item col-md-2 form-group" data-category="<?php echo trim($team_class); ?>">
 						<article id="broadway">
-							<a href="<?php echo get_permalink(); ?>">
-							<img src="<?php echo $url; ?>" class="post-img">
+							
 							<!-- <div class="post-meta"><?php the_title(); ?> <br/>
 								<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
 							</div> -->
-							</a>
+							<div id="box" style="background:url(<?php echo $url;?>); background-size: cover;">
+  								<a href="<?php echo get_permalink(); ?>">
+								  <div id="overlay">
+								    <span id="plus"><?php the_title(); ?> <br/>
+									<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span></span>
+								  </div>
+							 	</a>
+							</div>
+							
 						</article>
 					</div>
 									
