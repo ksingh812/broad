@@ -193,6 +193,7 @@ padding-top: 15px!important;
 #colophon .widgettitle {font-weight:bold;}
 #secondary h1.widget-title, #footer-sidebar h1.widget-title {padding: 5px 5px 5px;}
 #ticket-table table > tbody> tr > td{border:0px;}
+#ticket-table table > tbody> tr > td.tn_results_tickets_text {width: 17%; padding-left: 5%;}
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {background-color: #dddddd;}
 .tkt-btn {
     background-color: #424242;
@@ -215,14 +216,8 @@ width:100%;
 height:250px;
 }
 
-.post-meta{background: rgba(0,0,0,0.8);
-text-align: center;
-color: #fff;
-padding: 15px;
-min-height: 100px;
-margin-top: -100px;
-font-size: 14px;
-line-height: 1.5;}
+.meta{font-size: 14px;
+font-weight: 500;}
 
 
 article a:hover{text-decoration:none;}

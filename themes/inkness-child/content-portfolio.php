@@ -10,7 +10,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content row">
-		<div class="col-md-4">
+		<div class="col-md-3">
 			<?php if ( has_post_thumbnail($post->ID) ) 
 			{
 				$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
@@ -22,10 +22,21 @@
 			}
 			?>
 			<img src="<?php echo $url; ?>" width="250px" height="auto"/>
+			<div class="meta">
+				<?php //Returns All Term Items for "portfolio_category"
+					$term_list = wp_get_post_terms($post->ID, 'portfolio_category', array("fields" => "all"));
+					$output;
+					foreach ($term_list as $term)
+					{
+						$output .= $term->name . ", ";
+					}
+					echo rtrim($output, ', ');;
+				?>
+			</div>
 			<!-- POST CONTENT -->
 			<?php the_content(); ?>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-9">
 			<div class="row" id="ticket-table">
 				<div class="table-responsive">				
 					<script type="text/javascript">// <![CDATA[
