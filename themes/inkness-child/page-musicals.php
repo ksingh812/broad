@@ -38,7 +38,7 @@ get_header(); ?>
 							<!-- <div class="post-meta"><?php the_title(); ?> <br/>
 								<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
 							</div> -->
-							<div id="box" style="background:url(<?php echo $url;?>); background-size: cover;">
+							<div id="box" style="background:url(<?php echo $url;?>); background-size: cover; max-height:250px;">
   								<a href="<?php echo get_permalink(); ?>">
 								  <div id="overlay">
 								    <span id="plus"><?php the_title(); ?> <br/>
