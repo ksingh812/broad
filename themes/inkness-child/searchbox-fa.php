@@ -12,7 +12,7 @@
 			var kwds = document.getElementById('SearchBox').value;
 			if (kwds == "" || kwds == "Search by Artist, Event or Venue") return;
 			
-			window.location= "http://tickets.tickethub.co/ResultsGeneral.aspx?stype=0&kwds=" + escape(kwds); 
+			window.location= "http://ticket.broadwayplay.nyc/ResultsGeneral.aspx?stype=0&kwds=" + escape(kwds); 
 		}
 		function KeyPressedSearch(e)
 		{
