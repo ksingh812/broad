@@ -39,7 +39,7 @@ get_header(); ?>
 								<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span>
 							</div> -->
 							<div id="box" style="background:url(<?php echo $url;?>); background-size: cover; max-height:250px;">
-  								<a href="<?php echo get_permalink(); ?>">
+  								<a href="<?php echo get_permalink(); ?>" title="<?php echo the_title(); ?> Tickets">
 								  <div id="overlay">
 								    <span id="plus"><?php the_title(); ?> <br/>
 									<span class="tkt"><i class="fa fa-ticket"></i> Buy Tickets</span></span>
