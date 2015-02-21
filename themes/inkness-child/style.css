@@ -190,7 +190,7 @@ padding-top: 15px!important;
 #primary article .entry-content{color:#2e2e2e; font-weight:300; font-size:18px;}
 .entry-header {font-size: 25px;font-weight: 600; padding-left: 15px;}
 #colophon { background: none repeat scroll 0 0 #2e2e2e;	color:#f2f2f2;}
-#colophon .widgettitle {font-weight:bold;}
+#colophon .widgettitle {font-weight:bold;margin-bottom: 10px;}
 #secondary h1.widget-title, #footer-sidebar h1.widget-title {padding: 5px 5px 5px;}
 #ticket-table table > tbody> tr > td{border:0px;}
 #ticket-table table > tbody> tr > td.tn_results_tickets_text {width: 17%; padding-left: 5%;}
@@ -353,3 +353,8 @@ border-radius: 3px;
                font-weight:400;
                color:rgba(255,255,255,.85);
                font-size:25px;}
+#menu-footer1{
+	list-style: none;
+	margin-left: 0;
+	font-weight: 300;
+}
